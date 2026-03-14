@@ -55,18 +55,6 @@ Follow these steps to set up the project locally:
 
 - [x] Project initialization with Vite and React.
 - [x] Configuration of ESLint and code quality tools.
-- [ ] User Authentication (Login/Signup pages).
+- [x] User Authentication (Login/Signup pages).
 - [ ] Home page layout and basic UI.
 
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
-5. Open a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License.
