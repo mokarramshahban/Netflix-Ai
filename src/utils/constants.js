@@ -1,4 +1,4 @@
-export const API_CONSTANTS = {
+export const OPTIONS_API_TMDB = {
   method: "GET",
   headers: {
     accept: "application/json",
@@ -8,3 +8,6 @@ export const API_CONSTANTS = {
 
 export const ONGOING_MOVIES_URL =
   "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
+
+export const MOVIES_VIDEO_URL =
+  "https://api.themoviedb.org/3/movie/";
