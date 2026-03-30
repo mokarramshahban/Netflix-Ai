@@ -41,7 +41,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute z-9 w-full bg-black/10 flex justify-between">
+    <div className="absolute z-9 w-full bg-black/1 flex justify-between">
       <img className="w-50 mx-10" src={LOGO} alt="" />
       {user && (
         <div className="flex items-center mx-3">
@@ -52,7 +52,7 @@ const Header = () => {
           />
           <button
             onClick={handleSignOut}
-            className="text-black border border-black h-5/12 px-6 rounded-sm mx-2 hover:scale-95 transition-all duration-200"
+            className="text-white border border-white h-5/12 px-6 rounded-sm mx-2 hover:scale-95 transition-all duration-200 bg-black/20"
           >
             Sign out
           </button>
