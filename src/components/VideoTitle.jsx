@@ -3,7 +3,7 @@ import { FaInfoCircle } from "react-icons/fa";
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="pt-83 px-12 absolute bg-linear-to-r from-black/90 w-screen aspect-video">
+    <div className="pt-83 px-12 absolute bg-linear-to-r from-black/90 w-full aspect-video">
       <h1 className="text-white text-4xl font-bold">{title}</h1>
       <p className="text-white text-xl w-1/3 py-4">{overview}</p>
       <div className="flex gap-4">
