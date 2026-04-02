@@ -3,11 +3,11 @@ import MovieCard from "./MovieCard";
 const MovieList = ({ title, movies }) => {
   console.log(movies);
   return (
-    <div className="px-6 bg-black text-white">
+    <div className="px-6 text-white">
       <h2 className="py-4 text-3xl">{title}</h2>
       <div className="flex overflow-x-scroll no-scrollbar">
         <div className="flex">
-          {movies.map((movie) => (
+          {movies?.map((movie) => (
             <MovieCard key={movie.id} posterPath={movie.poster_path} />
           ))}
         </div>

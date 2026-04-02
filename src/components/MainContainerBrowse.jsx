@@ -5,11 +5,11 @@ import VideoBackground from "./VideoBackground";
 const MainContainerBrowse = () => {
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
   if (!movies) return;
-  const mainMovie = movies[2];
+  const mainMovie = movies[10];
 
   const { original_title, overview, id } = mainMovie;
   return (
-    <div>
+    <div className="-mt-33">
       <VideoTitle title={original_title} overview={overview} />
       <VideoBackground movieId={id} />
     </div>
