@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 const usePopularMovies = () => {
   const dispatch = useDispatch();
+
   const getPopularMovies = async () => {
     const data = await fetch(POPULAR_MOVIES_URL, OPTIONS_API_TMDB);
     const json = await data.json();
