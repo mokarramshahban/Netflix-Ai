@@ -25,6 +25,7 @@ FlixFusion is a modern streaming platform clone that leverages Artificial Intell
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Linting**: [ESLint](https://eslint.org/)
+- **Backend/Auth**: [Firebase](https://firebase.google.com/)
 
 ## ⚙️ Installation & Setup
 
@@ -55,6 +56,6 @@ Follow these steps to set up the project locally:
 
 - [x] Project initialization with Vite and React.
 - [x] Configuration of ESLint and code quality tools.
+- [x] Firebase integration for authentication and backend.
 - [x] User Authentication (Login/Signup pages).
-- [ ] Home page layout and basic UI.
-
+- [x] Home page layout and basic UI.
