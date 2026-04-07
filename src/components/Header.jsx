@@ -9,7 +9,9 @@ import { IoIosLogOut } from "react-icons/io";
 import { RiGeminiFill } from "react-icons/ri";
 import { toggleAiSearchView } from "../utils/aiSearchSlice";
 import { IoMdHome } from "react-icons/io";
-
+import { SUPPORTED_LANGUAGES } from "../utils/constants";
+import { BsTranslate } from "react-icons/bs";
+import { changeLanguage } from "../utils/configSlice";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -50,11 +52,31 @@ const Header = () => {
     dispatch(toggleAiSearchView());
   };
 
+  const handleLanguageChange = (e) => {
+    dispatch(changeLanguage(e.target.value))
+  }
+
   return (
     <div className="absolute z-9 w-full -my-6 bg-black/1 flex justify-between">
       <img className="w-50 mx-10" src={LOGO} alt="" />
       {user && (
         <div className="flex items-end gap-1 mx-3">
+          { showAiSearch &&
+          <div className=" text-white flex bg-transparent border rounded-sm p-1 gap-1 items-center">
+            <BsTranslate />
+            <select name="" id="" onChange={handleLanguageChange}>
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option
+                  className="text-black"
+                  key={lang.identifier}
+                  value={lang.identifier}
+                >
+                  {lang.name}
+                </option>
+              ))}
+            </select>
+          </div>
+}
           <img
             className="w-15 h-15 mx-2 rounded-sm"
             src={user.photoURL}
