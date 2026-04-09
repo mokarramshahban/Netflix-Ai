@@ -5,10 +5,11 @@ import AiSearchSuggestions from "./AiSearchSuggestions";
 const AiSearchPage = () => {
   return (
     <div>
-      <div className="absolute h-full w-full overflow-hidden">
-        <img src={BG_IMAGE} alt="" />
+      <div className="fixed h-full w-full overflow-hidden -z-10">
+        <img className="h-full w-full object-cover" src={BG_IMAGE} alt="background" />
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
-      <div className="bg-black/60 h-full w-full absolute">
+      <div>
         <AiSearchBar />
         <AiSearchSuggestions />
       </div>
