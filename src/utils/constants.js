@@ -27,3 +27,8 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+export const MOVIE_SEARCH_DETAILS_TMDB_URL1 =
+  "https://api.themoviedb.org/3/search/movie?query=";
+export const MOVIE_SEARCH_DETAILS_TMDB_URL2 =
+  "&include_adult=false&language=en-US&page=1";
