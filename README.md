@@ -24,7 +24,7 @@ FlixFusion is a modern streaming platform clone that leverages Artificial Intell
 - **Frontend Framework**: [React](https://react.dev/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **AI Integration**: [Puter.js](https://puter.com/)
+- **AI Integration**: [Puter.js](https://developer.puter.com/)
 - **Linting**: [ESLint](https://eslint.org/)
 - **Backend/Auth**: [Firebase](https://firebase.google.com/)
 
