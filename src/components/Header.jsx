@@ -53,56 +53,57 @@ const Header = () => {
   };
 
   const handleLanguageChange = (e) => {
-    dispatch(changeLanguage(e.target.value))
-  }
+    dispatch(changeLanguage(e.target.value));
+  };
 
   return (
-    <div className="absolute z-9 w-full -my-6 bg-black/1 flex justify-between">
-      <img className="w-50 mx-10" src={LOGO} alt="" />
+    <div className="absolute z-9 w-full -my-6 bg-black/1 flex flex-col md:flex-row justify-between">
+      <img className="w-50 mx-auto md:mx-10" src={LOGO} alt="" />
       {user && (
-        <div className="flex items-end gap-1 mx-3">
-          { showAiSearch &&
-          <div className=" text-white flex bg-transparent border rounded-sm p-1 gap-1 items-center">
-            <BsTranslate />
-            <select name="" id="" onChange={handleLanguageChange}>
-              {SUPPORTED_LANGUAGES.map((lang) => (
-                <option
-                  className="text-black"
-                  key={lang.identifier}
-                  value={lang.identifier}
-                >
-                  {lang.name}
-                </option>
-              ))}
-            </select>
-          </div>
-}
+        <div className="flex items-end gap-1 mx-3 justify-between">
           <img
-            className="w-15 h-15 mx-2 rounded-sm"
+            className="hidden md:block w-15 h-15 mx-2 rounded-sm"
             src={user.photoURL}
             alt=""
           />
+
           {showAiSearch ? (
             <button
               onClick={handleSearchWithAiClick}
-              className="text-white border border-white h-5/12 px-6 rounded-sm mx-2 hover:scale-95 transition-all duration-200 bg-black/20 flex items-center gap-3"
+              className="text-white text-3xl md:text-lg py-2 border border-white h-5/12 px-3 md:px-6 rounded-sm mx-2 hover:scale-95 transition-all duration-200 bg-black/20 flex items-center gap-3"
             >
-              Home <IoMdHome />
+              <span className="hidden md:block">Home</span> <IoMdHome />
             </button>
           ) : (
             <button
               onClick={handleSearchWithAiClick}
-              className="text-white border border-white h-5/12 px-6 rounded-sm mx-2 flex items-center gap-3 bg-black/20 transition-all duration-200 hover:scale-95 hover:bg-linear-to-r hover:from-red-500 hover:via-green-500 hover:to-blue-500"
+              className="text-white text-3xl md:text-lg py-2 border border-white h-5/12 px-3 md:px-6 rounded-sm mx-2 flex items-center gap-3 bg-black/20 transition-all duration-200 hover:scale-95 hover:bg-linear-to-r hover:from-red-500 hover:via-green-500 hover:to-blue-500"
             >
-              Search with Ai <RiGeminiFill />
+              <span className="hidden md:block">Search with Ai</span>
+              <RiGeminiFill />
             </button>
           )}
-
+          {showAiSearch && (
+            <div className=" text-white flex bg-transparent border rounded-sm p-1 gap-1 items-center">
+              <BsTranslate />
+              <select name="" id="" onChange={handleLanguageChange}>
+                {SUPPORTED_LANGUAGES.map((lang) => (
+                  <option
+                    className="text-black"
+                    key={lang.identifier}
+                    value={lang.identifier}
+                  >
+                    {lang.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
           <button
             onClick={handleSignOut}
-            className="text-white border border-white h-5/12 px-6 rounded-sm mx-2 hover:scale-95 transition-all duration-200 bg-black/20 flex items-center gap-3"
+            className="text-white text-3xl md:text-lg py-2 border border-white h-5/12 px-3 md:px-6 rounded-sm mx-2 hover:scale-95 transition-all duration-200 bg-black/20 flex items-center gap-3"
           >
-            Sign out
+            <span className="hidden md:block">Sign out</span>
             <IoIosLogOut />
           </button>
         </div>

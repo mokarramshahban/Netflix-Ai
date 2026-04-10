@@ -10,7 +10,7 @@ const SecondaryContainerBrowse = () => {
   return (
     movies.nowPlayingMovies && (
       <div className=" bg-black">
-        <div className=" -mt-63 z-10 relative">
+        <div className="mt-0 md:-mt-63 z-10 relative">
           <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
           <MovieList title={"Popular"} movies={movies.popularMovies} />
           <MovieList title={"Top Rated"} movies={movies.topRatedMovies} />

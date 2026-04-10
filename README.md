@@ -1,16 +1,16 @@
 <h1 align="center">FlixFusion</h1>
 
-FlixFusion is a modern streaming platform clone that leverages Artificial Intelligence to provide personalized content recommendations and an enhanced user experience. Built with React, Vite, and integrated with AI capabilities.
+FlixFusion is a modern streaming platform clone that leverages Artificial Intelligence to provide personalized content recommendations and an enhanced user experience. Built with React, Vite, and integrated with AI capabilities using Puter.js.
 
 ## 📖 Table of Contents
-- [🚀 Planned Features](#-planned-features)
+- [🚀 Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [⚙️ Installation & Setup](#️-installation--setup)
 - [📈 Project Progress](#-project-progress)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
-## 🚀 Planned Features
+## 🚀 Features
 
 - **AI-Powered Recommendations**: Get movie and TV show suggestions tailored to your mood and preferences using advanced AI models.
 - **Smart Search**: Natural language search to find content even if you don't know the exact title.
@@ -24,6 +24,7 @@ FlixFusion is a modern streaming platform clone that leverages Artificial Intell
 - **Frontend Framework**: [React](https://react.dev/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **AI Integration**: [Puter.js](https://puter.com/)
 - **Linting**: [ESLint](https://eslint.org/)
 - **Backend/Auth**: [Firebase](https://firebase.google.com/)
 
@@ -59,3 +60,6 @@ Follow these steps to set up the project locally:
 - [x] Firebase integration for authentication and backend.
 - [x] User Authentication (Login/Signup pages).
 - [x] Home page layout and basic UI.
+- [x] Integration of Puter.js for AI capabilities.
+- [x] AI-Powered Recommendations and Smart Search.
+- [x] Responsive styling and final polish.

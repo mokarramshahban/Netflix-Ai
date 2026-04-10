@@ -99,7 +99,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute h-full w-full overflow-hidden">
-        <img className="" src={BG_IMAGE} alt="background" />
+        <img className="h-screen md:h-auto object-cover" src={BG_IMAGE} alt="background" />
       </div>
       <div className="bg-black/60 h-full w-full absolute">
         <div className="p-12 absolute bg-black/70 text-stone-50 w-full sm:w-6/12 md:w-4/12 mx-auto my-45 left-0 right-0 rounded-lg">

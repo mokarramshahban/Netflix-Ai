@@ -15,7 +15,7 @@ const Browse = () => {
   useTopRatedMovies();
   useUpcomingMovies();
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-black">
       <Header />
       {showAiSearch ? (
         <AiSearchPage />
